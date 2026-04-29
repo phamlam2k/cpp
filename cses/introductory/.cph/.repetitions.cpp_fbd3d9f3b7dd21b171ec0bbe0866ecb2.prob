@@ -1,0 +1,1 @@
+{"name":"Local: repetitions","url":"/Users/phamlam/Documents/Cpp/cses/introductory/repetitions.cpp","tests":[{"id":1777388414838,"input":"ATTCGGGA","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/cses/introductory/repetitions.cpp","group":"local","local":true}

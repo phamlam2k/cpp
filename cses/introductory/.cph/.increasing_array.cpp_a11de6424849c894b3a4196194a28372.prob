@@ -1,0 +1,1 @@
+{"name":"Local: increasing_array","url":"/Users/phamlam/Documents/Cpp/cses/introductory/increasing_array.cpp","tests":[{"id":1777390234940,"input":"5\n3 2 5 1 7","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/cses/introductory/increasing_array.cpp","group":"local","local":true}

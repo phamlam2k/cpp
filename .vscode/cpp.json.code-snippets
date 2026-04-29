@@ -1,0 +1,30 @@
+{
+  "Competitive Programming Template": {
+    "prefix": "cp",
+    "body": [
+      "#include <iostream>",
+      "#include <algorithm>",
+      "#include <map>",
+      "#include <string>",
+      "",
+      "#define endl \"\\n\"",
+      "#define int long long",
+      "#define CODEGOD ios_base::sync_with_stdio(false); cin.tie(NULL);",
+      "using namespace std;",
+      "",
+      "void solve() {",
+      "    $0",
+      "}",
+      "",
+      "signed main() {",
+      "    CODEGOD;",
+      "    int t = 1;",
+      "    cin >> t;",
+      "    while (t--) {",
+      "        solve();",
+      "    }",
+      "}"
+    ],
+    "description": "Competitive programming template"
+  }
+}
