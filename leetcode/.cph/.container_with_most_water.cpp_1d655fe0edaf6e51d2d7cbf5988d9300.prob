@@ -1,0 +1,1 @@
+{"name":"Local: container_with_most_water","url":"/Users/phamlam/Documents/Cpp/leetcode/container_with_most_water.cpp","tests":[{"id":1777540199153,"input":"9\n1 8 6 2 5 4 8 3 7","output":"49"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/leetcode/container_with_most_water.cpp","group":"local","local":true}
