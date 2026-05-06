@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "name": "windows-clang-x64",
+      "name": "linux-clang-x64",
       "includePath": [
         "${workspaceFolder}/**"
       ],
@@ -9,7 +9,7 @@
       "compilerPath": "/usr/bin/clang",
       "cStandard": "c17",
       "cppStandard": "c++14",
-      "intelliSenseMode": "windows-clang-x64"
+      "intelliSenseMode": "linux-clang-x64"
     }
   ],
   "version": 4
