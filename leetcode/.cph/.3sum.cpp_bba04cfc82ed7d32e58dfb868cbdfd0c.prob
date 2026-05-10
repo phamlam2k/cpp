@@ -1,0 +1,1 @@
+{"name":"Local: 3sum","url":"/workspaces/cpp/leetcode/3sum.cpp","tests":[{"id":1778406063461,"input":"7\n-100 -70 -60 110 120 130 160","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cpp/leetcode/3sum.cpp","group":"local","local":true}
