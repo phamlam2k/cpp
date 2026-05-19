@@ -1,7 +1,4 @@
-#include <iostream>
-#include <algorithm>
-#include <map>
-#include <string>
+#include <bits/stdc++.h>
 
 #define endl "\n"
 #define int long long
