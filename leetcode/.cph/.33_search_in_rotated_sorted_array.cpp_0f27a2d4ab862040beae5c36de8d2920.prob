@@ -1,0 +1,1 @@
+{"name":"Local: 33_search_in_rotated_sorted_array","url":"/Users/phamlam/Documents/Cpp/leetcode/33_search_in_rotated_sorted_array.cpp","tests":[{"id":1780127453337,"input":"6 8\n5 7 8 8 8 10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/leetcode/33_search_in_rotated_sorted_array.cpp","group":"local","local":true}
