@@ -70,7 +70,7 @@ void solve() {
     }
 
     int n1 = lowerBound(arr, 0, n - 1, target);
-    int n2 = upperBound(arr, 0, n - 1, target);
+    int n2 = upperBound(arr, 0, n - 1, target); 
 
     cout << n1 << " " << n2;
 }
