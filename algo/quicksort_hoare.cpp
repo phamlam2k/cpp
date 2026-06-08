@@ -5,7 +5,9 @@
 using namespace std;
 
 int partition(int arr[], int l, int r) {
-    int pivot = arr[l];
+    int mid = (l + r) / 2;
+
+    int pivot = arr[mid];
 
     int i = l - 1;
     int j = r + 1;
