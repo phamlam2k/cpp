@@ -1,9 +1,17 @@
 #include <bits/stdc++.h>
+#include <string>
 
 #define endl "\n"
 #define int long long
 #define CODEGOD ios_base::sync_with_stdio(false); cin.tie(NULL);
 using namespace std;
+
+struct Data
+{
+    int x;
+    string str;
+};
+
 
 void merge(int arr[], int l, int m, int r) {
     vector<int> v1(arr + l, arr + m + 1);
