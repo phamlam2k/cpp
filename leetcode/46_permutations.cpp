@@ -5,13 +5,25 @@
 #define CODEGOD ios_base::sync_with_stdio(false); cin.tie(NULL);
 using namespace std;
 
-void reverseArr(vector<int> &arr, int left, int right) {
-    while(left < right) {
-        swap(arr[left], arr[right]);
+void backTracking(vector<int> &arr, vector<vector<int>> &ans, vector<bool> used, vector<int> &choose, int n) {
+    if (choose.size() == n) {
+        ans.push_back(choose);
 
-        left++;
-        right--;
+        return;
     }
+
+    for (int i = 0; i < n; i++) {
+        if (used[i]) continue;
+        
+        choose.push_back(arr[i]);
+        used[i] = true;
+
+        backTracking(arr, ans, used, choose, n);
+
+        choose.pop_back();
+        used[i] = false;
+    }
+
 }
 
 void solve() {
@@ -25,34 +37,19 @@ void solve() {
         cin >> arr[i];
     }
 
-    int right = n - 1;
+    vector<vector<int>> ans;
+    vector<int> choose;
+    vector<bool> used(n, false);
 
-    while (right) {
-        int left = right - 1;
-        int num = arr[right];
+    backTracking(arr, ans, used, choose, n);
 
-        while (num < arr[left - 1] && left > 0) left--;
-
-        if (left < 0) {
-            right--;
-            continue;
-        }
-
-        if (num > arr[left]) {
-            swap(arr[left], arr[right]);
-        }
-
-        reverseArr(arr, left + 1, n - 1);
-
-        right = n - 1;
-
-        for (int i = 0; i < n; i++) {
-            cout << arr[i] << " ";
+    for (const auto& row : ans) {
+        for (int element : row) {
+            cout << element << " ";
         }
 
         cout << endl;
     }
-
 }
 
 signed main() {
