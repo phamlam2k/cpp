@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <map>
 #include <string>
+#include <vector>
 
 #define endl "\n"
 #define int long long
