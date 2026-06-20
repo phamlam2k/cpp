@@ -1,0 +1,1 @@
+{"name":"Local: 53_maximum_subarray","url":"/Users/phamlam/Documents/Cpp/leetcode/53_maximum_subarray.cpp","tests":[{"id":1781579782815,"input":"9\n-2 1 -3 4 -1 2 1 -5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/leetcode/53_maximum_subarray.cpp","group":"local","local":true}
