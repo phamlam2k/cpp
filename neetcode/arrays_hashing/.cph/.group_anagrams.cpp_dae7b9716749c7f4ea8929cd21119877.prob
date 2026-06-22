@@ -1,0 +1,1 @@
+{"name":"Local: group_anagrams","url":"/Users/phamlam/Documents/Cpp/neetcode/arrays_hashing/group_anagrams.cpp","tests":[{"id":1782144084808,"input":"6\nact pots tops cat stop hat","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/neetcode/arrays_hashing/group_anagrams.cpp","group":"local","local":true}
