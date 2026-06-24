@@ -1,0 +1,1 @@
+{"name":"Local: 209_minimun_size_subarray_sum","url":"d:\\cp\\cpp\\leetcode\\209_minimun_size_subarray_sum.cpp","tests":[{"id":1782265079498,"input":"6 7\n2 3 1 2 4 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cp\\cpp\\leetcode\\209_minimun_size_subarray_sum.cpp","group":"local","local":true}
