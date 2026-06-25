@@ -21,6 +21,8 @@ string encode (vector<string>& strs) {
             str += "~";
         }
     }
+
+    return str;
 }
 
 vector<string> decode(string s) {
