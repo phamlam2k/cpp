@@ -1,0 +1,1 @@
+{"name":"Local: buy_and_sell_crypto","url":"d:\\cp\\cpp\\neetcode\\sliding_window\\buy_and_sell_crypto.cpp","tests":[{"id":1783059527030,"input":"6\n10 1 5 6 7 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cp\\cpp\\neetcode\\sliding_window\\buy_and_sell_crypto.cpp","group":"local","local":true}
