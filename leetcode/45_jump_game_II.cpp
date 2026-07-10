@@ -1,4 +1,3 @@
-// TODO: This is a brute force solution. We can optimize it by using a greedy approach.
 #include <bits/stdc++.h>
 
 #define endl "\n"
@@ -6,39 +5,16 @@
 #define CODEGOD ios_base::sync_with_stdio(false); cin.tie(NULL);
 using namespace std;
 
-bool moveon (vector<int> &arr, vector<int> &trace, int &ans, int n, int idx) {
-    if (idx == n - 1) {
-        int len = trace.size();
-        ans = min(ans, len);
-        
-        return true;
-    }
-
-    if (idx > n - 1 || arr[idx] == 0) {
-        return false;
-    }
-
-    int start = min(n - 1, arr[idx]);
-
-    for (int i = start; i > 0; i--) {
-        trace.push_back(arr[idx]);
-
-        bool checked = moveon(arr, trace, ans, n, idx + i);
-
-        if (checked) {
-            return true;
-        }
-
-        trace.pop_back();
-    }
-
-    return true;
-}
-
 void solve() {
     int n;
     
     cin >> n;
+
+    if (n <= 1) {
+        cout << 0;
+
+        return;
+    }
 
     vector<int> arr(n);
 
@@ -46,18 +22,24 @@ void solve() {
         cin >> arr[i];
     }
 
-    int ans = INT_MAX;
+    int farthest = 0;
+    int currentEnd = 0;
+    int jump = 0;
 
-    vector<int> trace;
+    for (int i = 0; i < n; i++) {
+        farthest = max(farthest, i + arr[i]);
 
-    moveon(arr, trace, ans, n, 0);
+        if (i == currentEnd) {
+            jump++;
+            currentEnd = farthest;
 
-    if (ans == INT_MAX) {
-        cout << 0;
-        return;
-    }
+            if (currentEnd >= n - 1) {
+                break;
+            }
+        }
+    } 
 
-    cout << ans;
+    cout << jump;
 }
 
 signed main() {
