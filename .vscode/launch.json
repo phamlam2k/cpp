@@ -2,14 +2,33 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppvsdbg",
+      "name": "Debug active file",
+      "type": "cppdbg",
       "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
-      "console": "externalTerminal",
-      "cwd": "d:/cpp",
-      "program": "d:/cpp/build/Debug/outDebug"
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "Build active file",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/home/ubuntu/projects/cpp/leetcode",
+      "program": "/home/ubuntu/projects/cpp/leetcode/build/Debug/outDebug"
     }
   ]
 }

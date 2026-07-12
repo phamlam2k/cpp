@@ -57,5 +57,16 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+  "C_Cpp_Runner.msvcSecureNoWarnings": false,
+  "clangd.path": "/usr/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--all-scopes-completion",
+    "--header-insertion=iwyu",
+    "--log=error"
+  ],
+  "clangd.serverCompletionRanking": true,
+  "C_Cpp.intelliSenseEngine": "disabled"
 }
