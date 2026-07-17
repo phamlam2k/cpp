@@ -68,5 +68,5 @@
     "--log=error"
   ],
   "clangd.serverCompletionRanking": true,
-  "C_Cpp.intelliSenseEngine": "disabled"
+  "C_Cpp.intelliSenseEngine": "default"
 }
