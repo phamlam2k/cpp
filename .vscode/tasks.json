@@ -4,14 +4,14 @@
     {
       "label": "Build active file",
       "type": "shell",
-      "command": "/usr/bin/g++",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
       "args": [
         "-std=c++17",
         "-g",
         "-Wall",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
       ],
       "group": {
         "kind": "build",
@@ -23,16 +23,16 @@
     {
       "label": "Build and Run active file",
       "type": "shell",
-      "command": "/usr/bin/g++",
+      "command": "C:/msys64/ucrt64/bin/g++.exe",
       "args": [
         "-std=c++17",
         "-g",
         "-Wall",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}",
+        "${fileDirname}/${fileBasenameNoExtension}.exe",
         "&&",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
       ],
       "group": "build",
       "problemMatcher": ["$gcc"],
