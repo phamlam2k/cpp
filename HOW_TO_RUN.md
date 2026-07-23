@@ -71,6 +71,31 @@ Check if your output matches the sample output on Codeforces.
 
 ---
 
+## Template Linked List (LeetCode)
+
+- `linked_list.cpp` — copy file này cho mọi bài linked list
+
+```bash
+cp linked_list.cpp leetcode/206_reverse_linked_list.cpp
+bash run.sh leetcode/206_reverse_linked_list.cpp
+```
+
+`input.txt` dán thẳng format LeetCode, mỗi tham số 1 dòng:
+```
+[1,2,3,4,5]
+2
+```
+
+Trong file:
+- Viết code trong `class Solution` (đổi tên hàm `solve` cho đúng đề).
+- Ở `main()`, bỏ comment dòng `readList()` / `readInt()` tương ứng số tham số của đề.
+- Khi submit: chỉ copy phần giữa 2 dải `COPY TU DAY...` → `...DEN DAY`.
+- Không dùng `#define int long long` ở đây vì LeetCode khai báo `ListNode.val` là `int`.
+
+Helper có sẵn: `readList()`, `readInt()`, `readInts()`, `printList()`, `makeCycle(head, pos)` (test bài có chu trình).
+
+---
+
 ## Quick commands
 
 ```bash
