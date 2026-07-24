@@ -18,25 +18,40 @@
         "isDefault": true
       },
       "problemMatcher": ["$gcc"],
-      "detail": "Compile the currently open .cpp file"
+      "detail": "Chi bien dich file .cpp dang mo"
     },
     {
-      "label": "Build and Run active file",
+      "label": "Build & Run (input.txt)",
       "type": "shell",
-      "command": "C:/msys64/ucrt64/bin/g++.exe",
-      "args": [
-        "-std=c++17",
-        "-g",
-        "-Wall",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe",
-        "&&",
-        "${fileDirname}/${fileBasenameNoExtension}.exe"
-      ],
-      "group": "build",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "C:/Program Files/Git/bin/bash.exe",
+          "args": ["-c"]
+        }
+      },
+      "command": "g++ -std=c++17 -O2 -Wall ${fileBasename} -o ${fileBasenameNoExtension}.exe && echo '=== OUTPUT ===' && ./${fileBasenameNoExtension}.exe < input.txt",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
       "problemMatcher": ["$gcc"],
-      "detail": "Compile and immediately run the currently open .cpp file"
+      "detail": "Bien dich + chay voi input.txt trong cung thu muc (dung Git Bash)"
+    },
+    {
+      "label": "Build & Run (nhap tay)",
+      "type": "shell",
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "C:/Program Files/Git/bin/bash.exe",
+          "args": ["-c"]
+        }
+      },
+      "command": "g++ -std=c++17 -O2 -Wall ${fileBasename} -o ${fileBasenameNoExtension}.exe && ./${fileBasenameNoExtension}.exe",
+      "group": "test",
+      "problemMatcher": ["$gcc"],
+      "detail": "Bien dich + chay, tu go input tren terminal (dung Git Bash)"
     }
   ]
 }

@@ -71,6 +71,35 @@ Check if your output matches the sample output on Codeforces.
 
 ---
 
+## Template Solution (LeetCode) — chạy input.txt trong VS Code
+
+- `solution.cpp` — copy cho mọi bài LeetCode dạng `class Solution`
+
+**Chạy bằng nút/menu VS Code (đã fix config):**
+1. Copy template: `cp solution.cpp leetcode/1_two_sum.cpp`
+2. Sửa hàm trong `class Solution` cho đúng đề.
+3. Ở `main()`, chỉnh phần `WIRING` đọc đúng số/kiểu tham số, và đổi hàm `print...` cho đúng kiểu trả về.
+4. Tạo `input.txt` **cùng thư mục** với file `.cpp`, dán sample kiểu LeetCode (mỗi tham số 1 dòng):
+   ```
+   [2,7,11,15]
+   9
+   ```
+5. Mở file `.cpp`, bấm **Terminal → Run Task → `Build & Run (input.txt)`**
+   (hoặc **Ctrl+Shift+P → Tasks: Run Test Task** vì task này là default test task).
+
+Parser có sẵn: `readInt()`, `readVI()` (`[1,2,3]`), `readVVI()` (`[[1,2],[3,4]]`),
+`readStr()` (`"abc"`), `readVS()` (`["a","b"]`).
+In: `printInt()`, `printBool()`, `printStr()`, `printVI()`, `printVVI()`.
+
+Khi submit LeetCode: chỉ copy phần giữa `>>> COPY TU DAY` → `...DEN DAY`.
+
+> **Lưu ý về config:** shell mặc định trên máy là PowerShell 5.1 — **không** hỗ trợ `&&`
+> lẫn `< input.txt`. Vì vậy task `Build & Run` được cấu hình chạy bằng **Git Bash**
+> (`C:/Program Files/Git/bin/bash.exe`). Đó là lý do task "Build and Run" cũ (dùng `&&`
+> trong PowerShell) không chạy được.
+
+---
+
 ## Template Linked List (LeetCode)
 
 - `linked_list.cpp` — copy file này cho mọi bài linked list
