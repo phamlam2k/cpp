@@ -1,5 +1,17 @@
 {
   "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.autocomplete": "default",
+  "C_Cpp.suggestSnippets": true,
+  "C_Cpp.errorSquiggles": "disabled",
+  "[cpp]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.wordBasedSuggestions": "matchingDocuments"
+  },
   "C_Cpp_Runner.cCompilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "C:/msys64/ucrt64/bin/g++.exe",
   "C_Cpp_Runner.debuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
@@ -30,6 +42,5 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ],
-  "C_Cpp.errorSquiggles": "disabled"
+  ]
 }

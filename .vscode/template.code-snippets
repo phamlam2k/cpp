@@ -30,6 +30,39 @@
         ],
         "description": "Read vector"
     },
+    "LeetCode Template": {
+        "prefix": "leet",
+        "body": [
+            "#include <bits/stdc++.h>",
+            "using namespace std;",
+            "",
+            "template<typename T>",
+            "ostream& operator<<(ostream& os, const vector<T>& v) {",
+            "    os << \"[\";",
+            "    for (size_t i = 0; i < v.size(); i++) os << v[i] << (i + 1 < v.size() ? \", \" : \"\");",
+            "    os << \"]\";",
+            "    return os;",
+            "}",
+            "",
+            "class Solution {",
+            "public:",
+            "    ${1:int} ${2:functionName}(${3:params}) {",
+            "        $0",
+            "    }",
+            "};",
+            "",
+            "int main() {",
+            "    Solution sol;",
+            "",
+            "    // Test case 1 (copy input tu vi du tren LeetCode)",
+            "    auto result1 = sol.${2:functionName}(${4:args});",
+            "    cout << \"Test 1: \" << result1 << endl;",
+            "",
+            "    return 0;",
+            "}"
+        ],
+        "description": "LeetCode template (giu class Solution goc, goi tay trong main)"
+    },
     "For loop": {
         "prefix": "fr",
         "body": [
