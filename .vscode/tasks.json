@@ -4,14 +4,14 @@
         {
             "label": "Build active file",
             "type": "shell",
-            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "command": "/opt/homebrew/bin/g++-15",
             "args": [
                 "-std=c++17",
                 "-g",
                 "-Wall",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": {
                 "kind": "build",
@@ -26,15 +26,9 @@
             "label": "Build & Run (input.txt)",
             "type": "shell",
             "options": {
-                "cwd": "${fileDirname}",
-                "shell": {
-                    "executable": "C:/Program Files/Git/bin/bash.exe",
-                    "args": [
-                        "-c"
-                    ]
-                }
+                "cwd": "${fileDirname}"
             },
-            "command": "g++ -std=c++17 -O2 -Wall ${fileBasename} -o ${fileBasenameNoExtension}.exe && echo '=== OUTPUT ===' && ./${fileBasenameNoExtension}.exe < input.txt",
+            "command": "/opt/homebrew/bin/g++-15 -std=c++17 -O2 -Wall '${fileBasename}' -o '${fileBasenameNoExtension}' && echo '=== OUTPUT ===' && './${fileBasenameNoExtension}' < input.txt",
             "group": {
                 "kind": "test",
                 "isDefault": true
@@ -42,40 +36,35 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "Bien dich + chay voi input.txt trong cung thu muc (dung Git Bash)"
+            "detail": "Bien dich + chay voi input.txt trong cung thu muc"
         },
         {
             "label": "Build & Run (nhap tay)",
             "type": "shell",
             "options": {
-                "cwd": "${fileDirname}",
-                "shell": {
-                    "executable": "C:/Program Files/Git/bin/bash.exe",
-                    "args": [
-                        "-c"
-                    ]
-                }
+                "cwd": "${fileDirname}"
             },
-            "command": "g++ -std=c++17 -O2 -Wall ${fileBasename} -o ${fileBasenameNoExtension}.exe && ./${fileBasenameNoExtension}.exe",
+            "command": "/opt/homebrew/bin/g++-15 -std=c++17 -O2 -Wall '${fileBasename}' -o '${fileBasenameNoExtension}' && './${fileBasenameNoExtension}'",
             "group": "test",
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "Bien dich + chay, tu go input tren terminal (dung Git Bash)"
+            "detail": "Bien dich + chay, tu go input tren terminal"
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "label": "C/C++: g++ build active file",
+            "command": "/opt/homebrew/bin/g++-15",
             "args": [
                 "-fdiagnostics-color=always",
+                "-std=c++17",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "C:/msys64/ucrt64/bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
