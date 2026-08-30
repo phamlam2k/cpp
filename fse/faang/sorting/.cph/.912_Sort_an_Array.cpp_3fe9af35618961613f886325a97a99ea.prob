@@ -1,0 +1,1 @@
+{"name":"Local: 912_Sort_an_Array","url":"/Users/phamlam/Documents/Cpp/fse/faang/sorting/912_Sort_an_Array.cpp","tests":[{"id":1787969204481,"input":"5\n3 -2 1 5 -3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamlam/Documents/Cpp/fse/faang/sorting/912_Sort_an_Array.cpp","group":"local","local":true}
